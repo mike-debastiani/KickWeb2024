@@ -1,5 +1,5 @@
-/* Desktop */
-@media only screen and (min-width: 1025px) {
+/* Desktop (Priorität) */
+@media only screen and (min-width: 1200px) {
   body {
     background-color: black;
     background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
@@ -160,20 +160,20 @@
   }
 }
 
-/* Tablet im Hochformat */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+/* Tablet Querformat */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 }
 
-/* Tablet im Querformat */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+/* Tablet Hochformat */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
 }
 
-/* Handy im Hochformat */
-@media only screen and (max-device-width: 767px) and (orientation: portrait) {
+/* Mobile Hochformat */
+@media only screen and (max-width: 767px) and (orientation: portrait) {
 }
 
-/* Handy im Querformat */
-@media only screen and (max-device-width: 767px) and (orientation: landscape) {
+/* Mobile Querformat */
+@media only screen and (max-width: 767px) and (orientation: landscape) {
   body {
     background-color: black;
     background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
