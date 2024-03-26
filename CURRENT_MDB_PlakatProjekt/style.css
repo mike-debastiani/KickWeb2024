@@ -508,8 +508,8 @@ body {
     margin-top: 2vw;
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(5, 17vw);
-    grid-template-rows: repeat(29, 17vw);
+    grid-template-columns: repeat(5, 18vw);
+    grid-template-rows: repeat(29, 18vw);
     gap: 0.4vh;
   }
 
