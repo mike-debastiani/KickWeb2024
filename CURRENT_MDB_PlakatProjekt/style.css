@@ -339,10 +339,6 @@
 
 /* Tablet Hochformat */
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-}
-
-/* Mobile Hochformat */
-@media only screen and (max-width: 767px) and (orientation: portrait) {
   body {
     background-color: black;
     background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
@@ -353,17 +349,17 @@
 
   .yellow {
     color: #faec19;
-    font-size: 4vh;
+    font-size: 1.5vh;
     line-height: 1em;
     font-weight: 500;
   }
 
   .black {
     color: black;
-    font-size: 4vh;
-    line-height: 1.5em;
+    font-size: 1.5vh;
+    line-height: 2em;
     font-weight: 500;
-    margin-left: -1vh;
+    margin-left: -0.5vh;
   }
 
   .grid-container {
@@ -371,8 +367,8 @@
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(5, 17vw);
-    grid-template-rows: repeat(40, 17vw);
-    gap: 1vh;
+    grid-template-rows: repeat(29, 17vw);
+    gap: 0.4vh;
   }
 
   .letter1 {
@@ -395,74 +391,271 @@
 
   .letter4 {
     grid-column: 1 / 6;
-    grid-row: 13 / 17;
+    grid-row: 12 / 16;
     width: auto;
   }
 
   .letter5 {
     grid-column: 1 / 6;
-    grid-row: 17 / 21;
+    grid-row: 15 / 19;
     width: auto;
   }
 
   .letter6 {
     grid-column: 1 / 6;
-    grid-row: 21 / 25;
+    grid-row: 19 / 23;
     width: auto;
   }
 
   .letter7 {
     grid-column: 1 / 6;
-    grid-row: 25 / 29;
+    grid-row: 22 / 26;
     width: auto;
   }
 
   .letter8 {
     grid-column: 1 / 6;
-    grid-row: 29 / 33;
+    grid-row: 26 / 30;
     width: auto;
   }
 
   .txt-1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    align-self: flex-end;
   }
 
   .txt-2 {
+    grid-column: 5 / 6;
+    grid-row: 5 / 6;
+    align-self: flex-end;
+    justify-self: flex-end;
   }
 
   .txt-3 {
+    grid-column: 1 / 2;
+    grid-row: 11 / 12;
   }
 
   .txt-4 {
+    grid-column: 5 / 6;
+    grid-row: 13 / 14;
+    align-self: flex-end;
+    justify-self: flex-end;
   }
 
   .txt-5 {
+    grid-column: 1 / 2;
+    grid-row: 18 / 19;
   }
 
   .txt-6 {
+    grid-column: 1 / 2;
+    grid-row: 23 / 24;
   }
 
   .txt-7 {
+    grid-column: 5 / 6;
+    grid-row: 24 / 25;
+    align-self: flex-end;
+    justify-self: flex-end;
   }
 
   .txt-8 {
+    grid-column: 4 / 6;
+    grid-row: 7 / 8;
   }
 
   .txt-9 {
+    grid-column: 2 / 4;
+    grid-row: 10 / 11;
   }
 
   .txt-10 {
+    grid-column: 2 / 4;
+    grid-row: 14 / 15;
   }
 
   .txt-11 {
+    grid-column: 4 / 6;
+    grid-row: 17 / 18;
   }
 
   .txt-12 {
+    grid-column: 2 / 4;
+    grid-row: 21 / 22;
   }
 
   .txt-13 {
+    grid-column: 2 / 4;
+    grid-row: 25 / 26;
+    margin-left: 5vh;
   }
 
   .txt-14 {
+    grid-column: 4 / 6;
+    grid-row: 28 / 29;
+  }
+}
+
+/* Mobile Hochformat */
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  body {
+    background-color: black;
+    background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
+    font-family: "Inter", sans-serif;
+    margin: auto;
+    align-self: center;
+  }
+
+  .yellow {
+    color: #faec19;
+    font-size: 1.5vh;
+    line-height: 1em;
+    font-weight: 500;
+  }
+
+  .black {
+    color: black;
+    font-size: 1.5vh;
+    line-height: 2em;
+    font-weight: 500;
+    margin-left: -0.5vh;
+  }
+
+  .grid-container {
+    margin-top: 2vw;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(5, 17vw);
+    grid-template-rows: repeat(29, 17vw);
+    gap: 0.4vh;
+  }
+
+  .letter1 {
+    grid-column: 1 / 6;
+    grid-row: 1 / 5;
+    width: auto;
+  }
+
+  .letter2 {
+    grid-column: 1 / 6;
+    grid-row: 5 / 9;
+    width: auto;
+  }
+
+  .letter3 {
+    grid-column: 1 / 6;
+    grid-row: 9 / 13;
+    width: auto;
+  }
+
+  .letter4 {
+    grid-column: 1 / 6;
+    grid-row: 12 / 16;
+    width: auto;
+  }
+
+  .letter5 {
+    grid-column: 1 / 6;
+    grid-row: 15 / 19;
+    width: auto;
+  }
+
+  .letter6 {
+    grid-column: 1 / 6;
+    grid-row: 19 / 23;
+    width: auto;
+  }
+
+  .letter7 {
+    grid-column: 1 / 6;
+    grid-row: 22 / 26;
+    width: auto;
+  }
+
+  .letter8 {
+    grid-column: 1 / 6;
+    grid-row: 26 / 30;
+    width: auto;
+  }
+
+  .txt-1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    align-self: flex-end;
+  }
+
+  .txt-2 {
+    grid-column: 5 / 6;
+    grid-row: 5 / 6;
+    align-self: flex-end;
+    justify-self: flex-end;
+  }
+
+  .txt-3 {
+    grid-column: 1 / 2;
+    grid-row: 11 / 12;
+  }
+
+  .txt-4 {
+    grid-column: 5 / 6;
+    grid-row: 13 / 14;
+    align-self: flex-end;
+    justify-self: flex-end;
+  }
+
+  .txt-5 {
+    grid-column: 1 / 2;
+    grid-row: 18 / 19;
+  }
+
+  .txt-6 {
+    grid-column: 1 / 2;
+    grid-row: 23 / 24;
+  }
+
+  .txt-7 {
+    grid-column: 5 / 6;
+    grid-row: 24 / 25;
+    align-self: flex-end;
+    justify-self: flex-end;
+  }
+
+  .txt-8 {
+    grid-column: 4 / 6;
+    grid-row: 7 / 8;
+  }
+
+  .txt-9 {
+    grid-column: 2 / 4;
+    grid-row: 10 / 11;
+  }
+
+  .txt-10 {
+    grid-column: 2 / 4;
+    grid-row: 14 / 15;
+  }
+
+  .txt-11 {
+    grid-column: 4 / 6;
+    grid-row: 17 / 18;
+  }
+
+  .txt-12 {
+    grid-column: 2 / 4;
+    grid-row: 21 / 22;
+  }
+
+  .txt-13 {
+    grid-column: 2 / 4;
+    grid-row: 25 / 26;
+    margin-left: 5vh;
+  }
+
+  .txt-14 {
+    grid-column: 4 / 6;
+    grid-row: 28 / 29;
   }
 }
 
