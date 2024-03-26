@@ -38,8 +38,8 @@ body {
     margin-right: 4vh;
     display: grid;
     justify-content: flex-start;
-    grid-template-columns: repeat(40, 23vh);
-    grid-template-rows: repeat(4, 23vh);
+    grid-template-columns: repeat(40, 22vh);
+    grid-template-rows: repeat(4, 22vh);
     gap: 1vh;
   }
 
