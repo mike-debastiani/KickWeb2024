@@ -489,7 +489,6 @@ body {
 /* Mobile Hochformat */
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   body {
-    margin: auto;
     align-self: center;
   }
 
