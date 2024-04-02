@@ -8,11 +8,53 @@ body {
 .yellow {
   color: #faec19;
   font-weight: 500;
+  user-select: none;
 }
 
 .black {
   color: black;
   font-weight: 500;
+  user-select: none;
+}
+
+#letter1:hover {
+  fill: url(#img1);
+  filter: grayscale(100%);
+}
+
+#letter2:hover {
+  fill: url(#img2);
+  filter: grayscale(100%);
+}
+
+#letter3:hover {
+  fill: url(#img3);
+  filter: grayscale(100%);
+}
+
+#letter4:hover {
+  fill: url(#img4);
+  filter: grayscale(100%);
+}
+
+#letter5:hover {
+  fill: url(#img5);
+  filter: grayscale(100%);
+}
+
+#letter6:hover {
+  fill: url(#img6);
+  filter: grayscale(100%);
+}
+
+#letter7:hover {
+  fill: url(#img7);
+  filter: grayscale(100%);
+}
+
+#letter8:hover {
+  fill: url(#img8);
+  filter: grayscale(100%);
 }
 
 /* Desktop (Priorität) */
