@@ -24,7 +24,7 @@ section {
 
 #scroll-container {
   position: absolute;
-  right: 6rem;
+  right: 7rem;
   width: calc(45% - 6rem);
   height: fit-content;
   margin-top: -2rem;
