@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index Kick Web - Mike De Bastiani</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      const buttons = document.querySelectorAll(".hoverable");
+
+      buttons.forEach((button) => {
+        button.addEventListener("mouseover", () => {
+          const additionalInfo = button.querySelector(".additional-info");
+          if (additionalInfo) {
+            additionalInfo.textContent =
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+          }
+        });
+
+        button.addEventListener("mouseout", () => {
+          const additionalInfo = button.querySelector(".additional-info");
+          if (additionalInfo) {
+            additionalInfo.textContent = "";
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <section id="sticky-container">
+      <div id="title-blck">KICKWEB<br />2024<br />INDEX</div>
+      <div id="name-blck">Mike De Bastiani<br />Digital Ideation</div>
+    </section>
+    <section id="scroll-container">
+      <div class="collection-container">
+        <h2>EXERCISES</h2>
+        <!--<p>
+          Eine Auswahl an Übungen, welche im Rahmen des KickWeb Modules
+          gefertigt wurden.
+        </p>//-->
+        <button
+          type="button"
+          onclick="window.open('https://ynkroo.github.io/kickweb/tag1/fabulouscss/index.html', '_blank')"
+        >
+          HTML & CSS hands-on <em>day 1</em>
+          <span class="additional-info"
+            >A poem which is displayed with HTML and CSS.</span
+          >
+        </button>
+        <button type="button" onclick="window.open('link', '_blank')">
+          Flexbox exercise <em>day 2</em>
+          <span class="additional-info"
+            >A poster by Stephan Kochs which was implemented with Flexbox
+            CSS.</span
+          >
+        </button>
+        <button type="button" onclick="window.open('link', '_blank')">
+          Grid exercise <em>day 3</em>
+          <span class="additional-info"
+            >A poster by Josef Müller-Brockmann which was implemented with Grid
+            CSS.</span
+          >
+        </button>
+        <button type="button" onclick="window.open('link', '_blank')">
+          Navigation exercise <em>day 4</em>
+          <span class="additional-info"
+            >A header navigation, which can be changed into a hamburger menu by
+            a click.</span
+          >
+        </button>
+        <button type="button" onclick="window.open('link', '_blank')">
+          Tag 5 &nbsp;<em>day 5</em>
+          <span class="additional-info"
+            >Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</span
+          >
+        </button>
+      </div>
+      <div class="collection-container">
+        <h2>POSTER PROCESS</h2>
+        <button type="button" onclick="window.open('link', '_blank')">
+          First attempt<em>04.03</em>
+          <span class="additional-info"
+            >Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</span
+          >
+        </button>
+        <button type="button" onclick="window.open('link', '_blank')">
+          New Poster V1<em>04.03</em>
+          <span class="additional-info"
+            >Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</span
+          >
+        </button>
+        <button type="button" onclick="window.open('link', '_blank')">
+          Version 2<em>04.03</em>
+          <span class="additional-info"
+            >Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</span
+          >
+        </button>
+        <button type="button" onclick="window.open('link', '_blank')">
+          Version 3<em>04.03</em>
+          <span class="additional-info"
+            >Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</span
+          >
+        </button>
+      </div>
+    </section>
+  </body>
+</html>
