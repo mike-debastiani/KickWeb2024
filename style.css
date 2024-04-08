@@ -55,7 +55,7 @@ section {
   padding: 1rem 4rem 3rem 4rem;
   gap: 1.5rem;
   border-radius: 1.5rem;
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 4rem;
   transition: all 0.3s ease-in-out;
 }
@@ -72,6 +72,12 @@ em {
 a {
   color: #f27bff;
   font-weight: 500;
+}
+
+.final-btn {
+  font-size: 1.4rem;
+  background-color: rgb(113, 255, 201);
+  color: rgb(242, 123, 255);
 }
 
 button {
