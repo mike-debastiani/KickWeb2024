@@ -1,14 +1,51 @@
-const svg = document.querySelector("a1");
+const svg = document.querySelector(".a1");
+const path = svg.querySelector("path");
 
-const { xMin, xMax, yMin, yMax } = [...svg.children].reduce((acc, el) => {
-  const { x, y, width, height } = el.getBBox();
-  if (!acc.xMin || x < acc.xMin) acc.xMin = x;
-  if (!acc.xMax || x + width > acc.xMax) acc.xMax = x + width;
-  if (!acc.yMin || y < acc.yMin) acc.yMin = y;
-  if (!acc.yMax || y + height > acc.yMax) acc.yMax = y + height;
-  return acc;
-}, {});
+// Definiere die Ausgangs- und End-Werte für viewBox
+const originalViewBox = svg.getAttribute("viewBox").split(" ").map(parseFloat);
+const targetViewBox = "0 0 874 520".split(" ").map(parseFloat);
 
-const viewbox = `${xMin} ${yMin} ${xMax - xMin} ${yMax - yMin}`;
+// Berechne die Änderungswerte für jede Koordinate
+const viewBoxChange = targetViewBox.map(
+  (val, index) => val - originalViewBox[index]
+);
 
-svg.setAttribute("viewBox", viewbox);
+svg.addEventListener("mouseenter", () => {
+  // Führe die Transition für den Pfad aus
+  path.style.transition = "d 0.5s";
+  path.setAttribute(
+    "d",
+    "M706.94 0V177H0V520H873.94V0H706.94ZM706.94 353H167V344H706.94V353Z"
+  );
+
+  // Starte die Animation der viewBox
+  animateViewBox(originalViewBox, targetViewBox, viewBoxChange, 0);
+});
+
+svg.addEventListener("mouseleave", () => {
+  // Führe die Transition für den Pfad aus
+  path.style.transition = "d 0.5s";
+  path.setAttribute(
+    "d",
+    "M706.94 0V177H0V697H873.94V0H706.94ZM706.94 530H167V344H706.94V530Z"
+  );
+
+  // Starte die Rückwärtsanimation der viewBox
+  animateViewBox(
+    targetViewBox,
+    originalViewBox,
+    viewBoxChange.map((val) => -val),
+    0
+  );
+});
+
+function animateViewBox(start, target, change, progress) {
+  if (progress >= 1) return;
+
+  const newViewBox = start.map((val, index) => val + change[index] * progress);
+  svg.setAttribute("viewBox", newViewBox.join(" "));
+
+  requestAnimationFrame(() => {
+    animateViewBox(start, target, change, progress + 0.05);
+  });
+}
