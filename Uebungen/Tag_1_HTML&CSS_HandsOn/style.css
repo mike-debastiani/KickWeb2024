@@ -1,0 +1,74 @@
+/* Font Import */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Lokale Font importieren */
+@font-face {
+  font-family: "LithopsRegular";
+  src: url("Lithops-Regular.woff2");
+}
+
+/*-----Tags----*/
+body {
+  background-image: linear-gradient(
+    to bottom,
+    #011200,
+    #011200,
+    #011200,
+    #011200,
+    #011200,
+    #102111,
+    #18311b,
+    #214226,
+    #346b41,
+    #46975e,
+    #57c57f,
+    #65f6a2
+  );
+  padding: 10% 25% 10% 10%;
+  height: 60vh;
+}
+
+h1 {
+  color: rgb(101, 246, 162);
+  font-size: 2em;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 1.2em;
+}
+
+p {
+  color: rgb(101, 246, 162);
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  font-style: italic;
+}
+
+a {
+  color: rgb(101, 246, 162);
+}
+
+a:hover {
+  color: rgb(179, 236, 203);
+  transition: 0.3s;
+}
+
+/*-----ID----*/
+#poetry {
+  font-family: "Urbanist", sans-serif;
+}
+
+/*-----Klassen----*/
+.first {
+  color: rgb(229, 255, 249);
+  font-style: normal;
+}
+.second {
+  color: rgba(229, 255, 249, 0.8);
+  font-style: normal;
+}
+.third {
+  color: rgb(229, 255, 249, 0.6);
+  font-style: normal;
+  margin-bottom: 1.5em;
+}
