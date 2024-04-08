@@ -1,6 +1,6 @@
 # KickWeb2024
 
-Den aktuellsten Stand meines Plakat Projektes findest du unter diesem Link:
+Mein Index-File zu den Übungen und Plakatversionen:
 https://mike-debastiani.github.io/KickWeb2024/index.html
 
 
