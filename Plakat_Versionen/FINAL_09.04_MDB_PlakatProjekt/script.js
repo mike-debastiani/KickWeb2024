@@ -48,26 +48,27 @@ paths.forEach((path) => {
       }
     });
 
-    scrollInterval = setInterval(autoScroll, 80);
+    scrollInterval = setInterval(autoScroll, 30);
   });
 });
 
 // ======================= Auto scroll function =======================
 
 function autoScroll() {
-  var windowHeight = window.innerHeight;
-  var windowScrollTop = window.pageYOffset;
-
-  if (windowScrollTop + windowHeight >= document.body.scrollHeight) {
-    isScrollingDown = false;
-  } else if (windowScrollTop <= 0) {
-    isScrollingDown = true;
-  }
+  const windowHeight = window.innerHeight;
+  const documentHeight = document.body.clientHeight;
+  const maxScroll = documentHeight - windowHeight;
 
   if (isScrollingDown) {
     window.scrollBy(0, 1);
   } else {
     window.scrollBy(0, -1);
+  }
+
+  if (window.scrollY >= maxScroll) {
+    isScrollingDown = false;
+  } else if (window.scrollY <= 0) {
+    isScrollingDown = true;
   }
 }
 
