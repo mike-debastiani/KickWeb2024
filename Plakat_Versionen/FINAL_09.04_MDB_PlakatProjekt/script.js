@@ -1,8 +1,11 @@
 const body = document.body;
 const paths = document.querySelectorAll("path");
+const audio = new Audio("creepyChoir.wav");
 
 paths.forEach((path) => {
   path.addEventListener("mouseover", () => {
+    audio.play();
+
     body.classList.add("strobe-effect");
     const yellowTexts = document.querySelectorAll(".yellow");
     const blackTexts = document.querySelectorAll(".black");
@@ -19,6 +22,9 @@ paths.forEach((path) => {
     });
   });
   path.addEventListener("mouseout", () => {
+    audio.pause();
+    audio.currentTime = 0;
+
     body.classList.remove("strobe-effect");
     const yellowTexts = document.querySelectorAll(".yellow");
     const blackTexts = document.querySelectorAll(".black");
