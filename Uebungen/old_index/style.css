@@ -6,14 +6,17 @@
 }
 
 body {
+  font-family: "Roboto Mono", monospace;
   display: flex;
   height: 90vh;
   padding: 6rem;
   position: relative;
-  background-color: black;
-  background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
-  font-family: "Inter", sans-serif;
 }
+
+/*p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+}*/
 
 section {
   display: block;
@@ -36,57 +39,66 @@ section {
 
 #title-blck {
   font-size: 7rem;
-  line-height: 7rem;
-  font-weight: 900;
-  color: #faec19;
+  font-weight: 500;
 }
 
 #name-blck {
   font-size: 1.5rem;
   font-weight: 300;
-  color: rgb(250, 236, 25);
+  color: #a0a0a0;
 }
 
 .collection-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1rem 3rem 3rem 3rem;
+  padding: 1rem 4rem 3rem 4rem;
   gap: 1.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 4rem;
   transition: all 0.3s ease-in-out;
-  background-color: #faec19;
 }
 
 h2 {
   font-size: 2rem;
   margin-bottom: 0;
-  font-weight: 800;
 }
 
 em {
   font-weight: 400;
 }
 
+a {
+  color: #f27bff;
+  font-weight: 500;
+}
+
+.final-btn {
+  font-size: 1.4rem;
+  background-color: rgb(113, 255, 201);
+  color: rgb(242, 123, 255);
+}
+
 button {
   padding: 1rem 2rem;
+  font-family: "Roboto Mono", monospace;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 500;
+  border-radius: 0.5rem;
   border: none;
-  background-color: black;
+  background-color: #e7e7e7;
   transition: all 0.3s ease-in-out;
   text-align: start;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  color: #faec19;
 }
 
 button:hover {
   font-size: 1.4rem;
-  color: black;
-  background-color: #faec19;
-  border: black 0.3rem solid;
+  background-color: #71ffc8;
+  color: #f27bff;
 }
 
 .additional-info {
@@ -104,6 +116,6 @@ button:hover .additional-info {
 }
 
 ::selection {
-  color: black;
-  background-color: rgb(250, 236, 25);
+  color: #f27bff;
+  background-color: #71ffc8;
 }
