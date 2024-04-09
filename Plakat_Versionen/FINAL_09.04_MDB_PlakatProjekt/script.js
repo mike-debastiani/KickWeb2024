@@ -4,7 +4,9 @@ const audio = new Audio("creepyChoir.wav");
 
 let scrollInterval;
 let isUserScrolling = false;
-let isScrollingDown = true; // Neue Variable, um die Scrollrichtung zu verfolgen
+let isScrollingDown = true;
+
+// ======================= Hover on path strobe & audio effect =======================
 
 paths.forEach((path) => {
   path.addEventListener("mouseover", () => {
@@ -50,20 +52,22 @@ paths.forEach((path) => {
   });
 });
 
+// ======================= Auto scroll function =======================
+
 function autoScroll() {
   var windowHeight = window.innerHeight;
   var windowScrollTop = window.pageYOffset;
 
   if (windowScrollTop + windowHeight >= document.body.scrollHeight) {
-    isScrollingDown = false; // Ändere die Scrollrichtung, wenn das Ende erreicht ist
+    isScrollingDown = false;
   } else if (windowScrollTop <= 0) {
-    isScrollingDown = true; // Ändere die Scrollrichtung, wenn ganz oben erreicht ist
+    isScrollingDown = true;
   }
 
   if (isScrollingDown) {
-    window.scrollBy(0, 1); // Scroll nach unten, wenn isScrollingDown true ist
+    window.scrollBy(0, 1);
   } else {
-    window.scrollBy(0, -1); // Scroll nach oben, wenn isScrollingDown false ist
+    window.scrollBy(0, -1);
   }
 }
 
