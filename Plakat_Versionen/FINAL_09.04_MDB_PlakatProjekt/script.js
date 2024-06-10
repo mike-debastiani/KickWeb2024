@@ -48,7 +48,7 @@ paths.forEach((path) => {
       }
     });
 
-    scrollInterval = setInterval(autoScroll, 30);
+    scrollInterval = setInterval(autoScroll, 20);
   });
 });
 
